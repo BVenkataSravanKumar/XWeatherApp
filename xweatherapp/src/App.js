@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 
-const API_KEY = "7d52690825d44cb7a2f155332262801 "; 
+const API_KEY = "7d52690825d44cb7a2f155332262801";
+
 function App() {
   const [city, setCity] = useState("");
   const [weather, setWeather] = useState(null);
@@ -43,7 +44,7 @@ function App() {
         <button onClick={fetchWeather}>Search</button>
       </div>
 
-      {loading && <p>Loading data…</p>}
+      {loading && <p>Loading data...</p>}
 
       {weather && (
         <div className="weather-cards">
