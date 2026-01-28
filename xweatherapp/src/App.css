@@ -21,7 +21,6 @@ body {
   font-size: 16px;
   border-radius: 6px;
   border: 1px solid #ddd;
-  outline: none;
 }
 
 .search-wrapper button {
@@ -34,17 +33,7 @@ body {
   cursor: pointer;
 }
 
-.search-wrapper button:hover {
-  background-color: #43a047;
-}
-
-.loading {
-  text-align: center;
-  margin-top: 10px;
-  font-style: italic;
-}
-
-.cards {
+.weather-cards {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -52,7 +41,7 @@ body {
   flex-wrap: wrap;
 }
 
-.card {
+.weather-card {
   background-color: white;
   width: 220px;
   padding: 25px 20px;
@@ -61,12 +50,11 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.card h3 {
+.weather-card h3 {
   margin-bottom: 10px;
-  font-size: 20px;
 }
 
-.card p {
+.weather-card p {
   font-size: 18px;
   margin: 0;
 }
